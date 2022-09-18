@@ -1,0 +1,15 @@
+.rounded {
+  border-radius: 1rem;
+}
+
+.circle {
+  border-radius: 5rem;
+}
+
+.col-4 {
+  @include column(4);
+}
+
+.col-3 {
+  @include column(3);
+}

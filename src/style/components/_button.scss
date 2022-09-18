@@ -1,0 +1,19 @@
+.btn {
+  padding: 0.8rem 3rem;
+  background-color: $clr-orang-900;
+  color: $clr-white-900;
+  text-align: center;
+  font-size: 1.125rem;
+  @extend .rounded;
+
+  &--submit {
+    @extend .circle;
+    border: transparent;
+    padding: 1rem 3rem;
+    cursor: pointer;
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}

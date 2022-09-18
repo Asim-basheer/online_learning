@@ -1,0 +1,34 @@
+.news-letter {
+  &__icon {
+    margin-bottom: 10rem;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-white-400;
+    @extend .circle;
+    > {
+      input {
+        background-color: inherit;
+        flex: 1;
+        @extend .circle;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 1rem 3rem;
+        border: transparent;
+        font-size: 1.125rem;
+        outline: none;
+      }
+
+      button {
+      }
+    }
+  }
+}

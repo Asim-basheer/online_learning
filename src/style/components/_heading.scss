@@ -1,0 +1,18 @@
+.heading {
+  width: 65%;
+  margin: 0 auto 4rem;
+  text-align: center;
+  color: $clr-blue-900;
+  &__img {
+    margin: 0 auto 1rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 2.4375rem;
+  }
+
+  &__description {
+    font-size: 1.375rem;
+  }
+}

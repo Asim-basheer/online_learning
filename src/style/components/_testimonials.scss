@@ -1,0 +1,103 @@
+.testimonials {
+  height: 500px;
+  position: relative;
+  margin-bottom: 15rem;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  &::before {
+    top: 10%;
+    left: 0%;
+    background: url(https://ik.imagekit.io/ievdkoh2e/online_learning/Subtraction_1_RTU2Fz6i1.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663506220387);
+  }
+  &::after {
+    bottom: -10%;
+    right: 0%;
+    background: url(https://ik.imagekit.io/ievdkoh2e/online_learning/Subtraction_2_pIa4z3sI-.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663506220359);
+  }
+
+  &__card-box {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 5rem;
+    position: relative;
+    height: inherit;
+  }
+
+  &-card {
+    color: $clr-blue-900;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.73, 0.62, 0.44, 1.03);
+    transform: scale(0.2);
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+      top: 0%;
+    }
+
+    &__icon,
+    &__img {
+      > img {
+        margin: 0 auto 1rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
+    }
+
+    &__rate {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      margin-bottom: 1rem;
+
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+        img {
+          height: 1.7rem;
+        }
+      }
+    }
+  }
+
+  &__bullet-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span {
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 50%;
+      border: 1px solid $clr-blue-700;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba($clr-blue-700, 0.4);
+      }
+      &.active {
+        background-color: $clr-blue-700;
+      }
+    }
+  }
+}
