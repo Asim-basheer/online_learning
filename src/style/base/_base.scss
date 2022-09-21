@@ -32,19 +32,20 @@ body {
 
 /* Set core body defaults */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: $clr-white-800;
-  height: 1000rem;
 }
 
 // padding for all sections
 
 section {
-  // padding-top: 10rem;
-  // padding-bottom: 10rem;
   margin: 10rem 0;
+  position: relative;
+  @include respond(xs) {
+    margin: 7rem 0;
+  }
 }
 
 /* A elements that don't have a class get default styles */

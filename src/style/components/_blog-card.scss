@@ -13,6 +13,10 @@
       width: 100%;
       height: 200px;
       filter: contrast(70%);
+
+      @include respond(xs) {
+        height: 150px;
+      }
     }
   }
 
@@ -20,6 +24,10 @@
   &__description,
   &__link {
     padding: 0 2.2rem;
+
+    @include respond(xs) {
+      padding: 0 0.5rem;
+    }
   }
   &__title {
     color: $clr-orang-800;
@@ -29,35 +37,6 @@
 
   &__description {
     margin-bottom: 2rem;
-  }
-
-  &__link {
-    font-size: 1.2rem;
-    position: relative;
-    padding: 1rem 2rem;
-    transition: all 0.3s ease-in-out;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      width: 30%;
-      height: 4px;
-      background-color: $clr-blue-700;
-      transition: all 0.3s ease-in-out;
-    }
-
-    &:hover {
-      color: $clr-white-900;
-    }
-    &:hover::after {
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      bottom: 0;
-      @extend .circle;
-    }
   }
 
   &:hover {

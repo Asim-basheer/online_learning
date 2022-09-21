@@ -1,6 +1,98 @@
 .footer {
-  background-image: url(https://ik.imagekit.io/ievdkoh2e/online_learning/Group_128_tzAgl1OsH.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663521922962);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
+  padding: 5rem 0;
+  color: $clr-white-900;
+  background-color: $clr-orang-900;
+
+  @include respond(xs) {
+    padding: 3rem 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    > div:nth-child(1) {
+      width: 30%;
+
+      @include respond(sm) {
+        width: auto;
+      }
+    }
+
+    @include respond(sm) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  &__logo {
+    img {
+      margin-bottom: 3rem;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__links {
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      @include respond(xs) {
+        align-items: center;
+      }
+    }
+  }
+  &__social {
+    > div {
+      display: flex;
+      gap: 0.5rem;
+
+      @include respond(xs) {
+        justify-content: center;
+      }
+    }
+  }
+
+  h5 {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 1rem;
+    width: fit-content;
+    font-size: 1.4rem;
+    @include respond(xs) {
+      margin: auto;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      background-color: $clr-blue-700;
+      left: 0;
+      bottom: 0;
+
+      @include respond(xs) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  p,
+  a {
+    font-size: 1.1rem;
+  }
+
+  a {
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }

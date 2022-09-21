@@ -3,6 +3,12 @@
   margin: 0 auto 4rem;
   text-align: center;
   color: $clr-blue-900;
+  font-family: 'Lato', sans-serif;
+
+  @include respond(sm) {
+    width: auto;
+  }
+
   &__img {
     margin: 0 auto 1rem;
   }
@@ -10,9 +16,29 @@
   &__title {
     margin-bottom: 1rem;
     font-size: 2.4375rem;
+
+    @include respond(sm) {
+      font-size: 2rem;
+    }
+    @include respond(xs) {
+      font-size: 1.7rem;
+    }
   }
 
   &__description {
     font-size: 1.375rem;
+
+    @include respond(sm) {
+      font-size: 1rem;
+    }
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
 }

@@ -6,7 +6,7 @@ const BlogCard = ({ img, title, description }) => {
       </div>
       <h3 className='blog-card__title'>{title}</h3>
       <p className='blog-card__description'>{description}</p>
-      <a href='/' className='blog-card__link'>
+      <a href='/' className='btn btn--secondary'>
         Read more
       </a>
     </article>

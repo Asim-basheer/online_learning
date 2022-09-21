@@ -9,7 +9,7 @@ const HeroSection = () => {
               alt='logo'
             />
           </div>
-          <a href='/' className='navbar__btn btn'>
+          <a href='/' className='btn'>
             Contact
           </a>
         </nav>
