@@ -32,8 +32,9 @@ const HeroSection = () => {
           </div>
           <div className='hero-section__img'>
             <img
-              src='https://ik.imagekit.io/ievdkoh2e/online_learning/Group_308_3Qni04Fcn.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663490770585'
+              src='https://ik.imagekit.io/ievdkoh2e/online_learning/chris-montgomery-smgTvepind4-unsplash_3R_N8DbyHb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676726217656'
               alt='content'
+              className='rounded'
             />
           </div>
         </div>

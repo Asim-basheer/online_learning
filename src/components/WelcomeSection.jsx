@@ -1,6 +1,8 @@
 import Heading from './Heading';
 import OnlineCard from './OnlineCard';
 
+import { MdOutlineLocalCafe, MdStars, MdWatchLater } from 'react-icons/md';
+
 const WelcomeSection = () => {
   return (
     <section>
@@ -12,10 +14,10 @@ const WelcomeSection = () => {
         />
 
         <div className='col-4'>
-          <OnlineCard />
-          <OnlineCard />
-          <OnlineCard />
-          <OnlineCard />
+          <OnlineCard number={'One'} />
+          <OnlineCard number={'Two'} Icon={MdStars} />
+          <OnlineCard number={'Three'} Icon={MdWatchLater} />
+          <OnlineCard number={'Four'} Icon={MdOutlineLocalCafe} />
         </div>
       </div>
     </section>

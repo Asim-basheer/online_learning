@@ -24,7 +24,8 @@ header {
       gap: 4rem;
     }
     @include respond(xl) {
-      grid-auto-columns: 35% 1fr;
+      grid-auto-columns: 35% 45%;
+      justify-content: space-between;
     }
     &__content {
       color: $clr-blue-900;

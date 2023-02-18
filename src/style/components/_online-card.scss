@@ -1,36 +1,31 @@
 .online-card {
-  border: 2px dashed $clr-blue-900;
+  border: 2px solid $clr-blue-900;
   padding: 1.5rem 2rem 2rem;
   text-align: center;
   color: $clr-blue-900;
   @extend .rounded;
-  transition: all 0.3s ease-in-out;
-  &__img {
-    background: url(https://ik.imagekit.io/ievdkoh2e/online_learning/Group_252_WfYyUqtBK.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663500958362)
-      no-repeat center;
-    margin: 0 auto 2rem;
-    height: 129.88px;
-    transition: all 0.3s ease-in-out;
+  transition: all 500ms ease-in-out;
+  &__icon {
+    font-size: 100px;
+    width: fit-content;
+    margin: 0 auto 1rem;
   }
 
   &__title {
     margin-bottom: 1.5rem;
     font-size: 1.25rem;
+    font-weight: 600;
   }
 
   &__description {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   // hover effect for online card
   &:hover {
-    border: 2px dashed $clr-orang-900;
+    border: 2px solid $clr-orang-900;
     background-color: $clr-orang-900;
     color: $clr-white-900;
-  }
-
-  &:hover &__img {
-    background: url(https://ik.imagekit.io/ievdkoh2e/online_learning/Group_275_9F4Xz_YwfL.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1663500955657)
-      no-repeat center;
   }
 }
