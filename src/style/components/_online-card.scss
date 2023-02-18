@@ -1,6 +1,6 @@
 .online-card {
   border: 2px solid $clr-blue-900;
-  padding: 1.5rem 2rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   color: $clr-blue-900;
   @extend .rounded;
@@ -8,7 +8,7 @@
   &__icon {
     font-size: 100px;
     width: fit-content;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
   }
 
   &__title {
